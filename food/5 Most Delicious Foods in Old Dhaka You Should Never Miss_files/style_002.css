@@ -1,0 +1,288 @@
+/*
+Theme Name:         OfforadBangladesh
+Theme URI:          http://www.offroadbangladesh.com
+Version:            3
+Author:             TanvirM, Nirjhor, Kamrul, Sudarshan
+*/
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'icomoon';
+    src:url('./fonts/icomoon/icomoon.eot?-ee0u0f');
+    src:url('./fonts/icomoon/icomoon.eot?#iefix-ee0u0f') format('embedded-opentype'),
+        url('./fonts/icomoon/icomoon.woff?-ee0u0f') format('woff'),
+        url('./fonts/icomoon/icomoon.ttf?-ee0u0f') format('truetype'),
+        url('./fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
+}
+carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    /* height: 100%; */
+}
+.navbar.navbar-fixed-top {
+    /*background: url('img/top-bg-new.png');*/
+    /*z-index: -100;*/
+    height: 65px;
+    border-width: 0;
+    background-color: #fff;
+}
+#myNavbar {
+    padding-top: 0px;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+ul.banner-cat-list {
+    margin: 1em auto;
+    padding: 0;
+    text-align: center;
+}
+ul.banner-cat-list li {
+    display: inline-block;
+    margin: 5px;
+}
+ul.banner-cat-list li a {
+    width: 196px;
+    height: 80px;
+    display: table;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    background: rgba(21,45,69,0.7);
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ul.banner-cat-list li a i {
+    font-size: 27px;
+    line-height: 1.2;
+}
+[class*=" ti-"], [class^=ti-] {
+    font-family: themify;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 767px)
+    ul.banner-cat-list li {
+        margin: 3px;
+}
+@media (max-width: 767px)
+    ul.banner-cat-list li a {
+        width: 50px;
+        height: 40px;
+}
+@media (max-width: 767px)
+    ul.banner-cat-list li a {
+        top:-100px;
+        width: 180px;
+        height: 80px;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 3px;
+        color: #ffffff;
+        font-size: 13px;
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.1);
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+}
+.search-sec-homet {
+    background: transparent;
+}
+
+.search-sec .overlay {
+    padding: 10px;
+}
+.search-sec-homet.trp_search .overlay .border {
+    border-radius: 4px;
+    border: 1px solid rgba(169, 169, 169, 0.54);
+    padding: 15px 20px 55px 20px;
+    background-color: rgba(136, 185, 120, 0.14);
+}
+.headerttitle{
+    background: rgb(246, 248, 250) none repeat scroll 0 0;
+}
+.headerttitle h4 {
+    background: rgb(246, 248, 250) none repeat scroll 0 0;
+    border: 1px solid #e0eaf5;
+    border-radius: 0;
+    color: #152d45;
+    font-size: 24px;
+    line-height: 1.42857;
+    margin: 0 -10px;
+    padding: 0 17px;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+}
+.no-padd{padding-left: 0px; }
+.ser-in-box {
+    float: left;
+    position: relative;
+}
+.border-box{
+    border: 1px solid #e0eaf5;
+    padding: 15px;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+}
+.ser-in-box .input-box {
+    width: 100% !important;
+    border-radius: 0;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    height: 40px;
+    background: #fff;
+    outline: none;
+    color: #000000;
+}
+.search-sec .date_pic {
+    background-color: #fff;
+    border-radius: 0;
+    height: 40px;
+    font: 400 1.0715em/1em 'PT Serif', serif;
+    color: #4b4b4b;
+    border: 1px solid #ccc;
+    width: 97%;
+}
+
+.hr-border{
+    border-bottom: 1px solid #e0eaf5;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+}
+.border-only{
+    border: 5px solid #3B72B3;
+}
+.box-height{
+    height: 260px;
+}
+.bg{
+    background-color: #f6f8fa;
+    padding: 20px;
+    height: 100%;
+}
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    color: ##152d45;
+}
+.title {
+    background: rgba(0, 0, 0, 0.15) none repeat scroll 0 0;
+    padding: 5px;
+    margin: 60px auto 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.title h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+.title h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+}
+.text_with{width:90%;}
+.text_success{color:#006A4E;}
+.text_danger{color:#FF0000;}
+.text_wel {color:#424949; font-weight: bold;}
+.text_white{color:#fff;}
+.text_white a{color:#fff;}
+.text_white a:hover{color:#fff;}
+.vertical-center {
+    margin: 0;
+    position: relative;
+    top: 20%;
+    -ms-transform: translateY(-50%);
+    text-align: center;
+    padding: 0px;
+}
+.top_padd{
+    padding-top: 65px;
+}
+.common_padd{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+blockquote q{
+    color: #BF3723;
+    font-size: 25px ;
+}
+.navbar-toggle {
+    background: transparent;
+    border: 1px solid #152D45;
+}
+.navbar-toggle .icon-bar {
+    border-radius: 0;
+    background-color: #152D45;
+}
+.navbar-brand {
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #167ac6;
+}
+.navbar-brand .logo-1 {
+    width: 130px;
+    height: 50px;
+}
+.navbar-nav {
+    margin-left: 20px;
+}
+.navbar-nav>li>a {
+    padding-top: 17px;
+    padding-bottom: 10px;
+    line-height: 15px;
+    top: 13px;
+}
+.navbar-nav a {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+    font-size: 14px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    color: #006A4E none repeat scroll 0 0;
+    background: #fff;
+}
+
+.navbar-nav li > a:hover{
+    color: #006A4E;
+}
+.navbar-right {
+    margin: 0;
+}
+
+/*TOp Control Styling*/
+#topcontrol {
+    border: 1px solid #c2c2c2;
+    bottom: 15px;
+    color: #000;
+    display: none;
+    padding: 0.5em 1em;
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    background-color: #f0f0f0;
+}
+#topcontrol:active, #topcontrol:focus {
+    outline: none;
+}
+.wheretostay {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}

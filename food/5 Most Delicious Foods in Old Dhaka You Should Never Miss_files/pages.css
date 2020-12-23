@@ -1,0 +1,1082 @@
+/* ==========================================================================
+Table of content
+* helper styling
+* color
+* header
+* sidebar menu
+* single post
+* carousel
+* panel info
+* nav tabs styling
+* widget
+* segment title
+* recently added tab
+* do you know
+* nav overlay
+* fancybox styling
+* google map styling\
+* card styling
+* event trip page styling
+* unused styling
+* media query
+========================================================================== */
+
+
+
+/* ==========================================================================
+Helper Styling
+========================================================================== */
+.float-left{
+    float:left;
+}
+.nopadding {
+    margin: 0!important;
+    padding: 0!important;
+}
+.form-control:focus {
+    border-color: #152d45;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+div[id*="ajaxsearchlite"] {
+    background-image: none !important;
+    background-color: rgba(21, 45, 69, 0.5) !important;
+}
+/*.probox {*/
+/*height: 45px; !important;*/
+/*}*/
+
+div[id*="ajaxsearchlite"] .probox .promagnifier {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput input {
+    line-height: 41px !important;}
+
+
+
+div[id*="ajaxsearchlite"] .probox {
+    background-color: rgba(21, 45, 69, 0.5) !important;
+    background-image: none !important;
+    border-radius: 0;
+    height: 41px !important;
+    border: 1px solid #fff !important;
+    color: #000 !important;
+    font-size: 25px;
+}
+div[id*="ajaxsearchlite"] .probox div.prosettings {
+    display: none;
+}
+div[id*="ajaxsearchlite"] .probox .proinput input {
+    color: #152d45 !important;
+    font-size: 14px !important;
+}
+
+/*input text styling*/
+div[id*="ajaxsearchlite"] .probox .proinput input::-moz-placeholder {
+    /*color: #152d45 !important;*/
+    color: #fff !important;
+    font-size: 14px !important;
+}
+
+/*placeholder styling*/
+div[id*="ajaxsearchlite"] .probox .proinput input:-moz-placeholder {
+    color: #fff !important;
+}
+
+
+div[id*="ajaxsearchlite"] .probox .promagnifier {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+div[id*="ajaxsearchlite"] .probox .promagnifier {
+    background: none;
+    background-image: none;
+}
+div[id*="ajaxsearchlite"] .probox .promagnifier .innericon svg {
+    fill: #000;
+}
+
+/* ==========================================================================
+Sidebar Menu
+========================================================================== */
+.leftmenusinglepage ul.nav {
+    padding-right: 0;
+    margin-top: 5px;
+}
+.leftmenusinglepage ul li {
+    border-bottom: 1px solid #f3f3f3;
+}
+.leftmenusinglepage ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.leftmenusinglepage ul li a:hover {
+    background: #F3F3F3;
+    color: #1b3a59;
+    outline: none;
+}
+
+.leftmenusinglepage ul li.active {
+    border-bottom: none;
+}
+
+.leftmenusinglepage ul li.active a {
+    color: #152d45;
+    background: #F3F3F3;
+    border-left: none;
+    margin-left: 0;
+}
+.nav-stacked>li+li {
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.affix {
+    position: fixed;
+    width: 293px;
+}
+
+/* ==========================================================================
+Single Post
+========================================================================== */
+.single {
+    margin-top: 85px;
+}
+.breadcrumb {
+    padding: 10px 15px;
+    /*margin-top: 5px;*/
+    margin-bottom: 0;
+    list-style: none;
+    background: #F3F3F3;
+}
+.breadcrumb>li+li:before {
+    content: "/\00a0";
+    padding: 0 0px;
+    color: #ccc;
+}
+
+h1.place-title {
+    font-size: 36px;
+    /*padding-left: 15px;*/
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-left: none;
+}
+h1.place-title:after {
+    padding: 0 10px;
+    color: #ccc;
+}
+
+.subtitle span a, .contribution span a {
+    border-bottom: 1px dashed #1b3a59;
+}
+
+
+
+#brief {
+    padding-top: 20px;
+}
+#brief, #howtogo, #whretostay, #thingstodo, #eatingfacilities, #traveltips, #mapSection {
+    padding-top: 80px;
+    margin-bottom: -80px;
+}
+#similar-places  {
+     padding-top: 80px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/* ==========================================================================
+Carousel
+========================================================================== */
+.thumbnail {
+    margin: 5px;
+}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{
+    width:100%;
+}
+.thumbnail > img {
+    height: 200px;
+}
+#custom_carousel .item {
+    color:#000;
+    background-color:#eee;
+
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd;
+    border: none;
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px;
+
+}
+#custom_carousel .controls li a img{
+    width:88px;
+    height:60px
+}
+.carousel-indicators {
+    bottom: 05px;
+    left: 65%;
+    text-align: right;
+}
+.carousel-caption h3 {
+    text-align: left;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    margin-top: 34px;
+}
+.welcomrnote {
+    width: 400px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    margin-left: 25px
+}
+.welcomrnote h1 {
+    line-height: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+.welcomrnote p {
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+}
+.video-teaser {
+    float: left;
+    width:200px;
+    height: 115px;
+}
+ul.feature-links {
+    float: right
+}
+ul.feature-links li {
+    margin-bottom: 6px;
+    background-color: #ddd;
+    list-style: none;
+}
+ul.feature-links li  a{
+    padding: 4px;
+    margin-bottom: 6px;
+    list-style: none;
+}
+/*Font Style For Header*/
+
+ol.carousel-indicators.fet {
+    bottom: 0px;
+}
+
+
+.controls .nav li a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.controls .nav li a:focus{
+    outline: none;
+}
+
+
+/* ==========================================================================
+PANEL INFO
+========================================================================== */
+.panel.with-nav-tabs .panel-heading {
+    padding: 0px;
+    border-radius: 0px;
+}
+.panel.with-nav-tabs .nav-tabs {
+    border-bottom: none;
+    background: rgba(40,44,42,0.05);
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: 10px;
+
+    border: none;
+    padding: 10px;
+}
+.panel.with-nav-tabs .nav-justified{
+    margin-bottom: -1px;
+}
+.panel-body {
+    padding: 0px;
+}
+.tab-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.panel-info {
+    border-color: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+    margin-top: 5px;
+    padding-top: 10px;
+}
+.panel-info>.panel-heading {
+    color: #31708f;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+/*================ Sudarshan Biswas ===========*/
+#accordion-req {
+    margin-bottom: 0;
+}
+
+#accordion-req .panel-body {
+    padding-bottom: 0;
+}
+
+.reserve-panel {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.reserve-panel .panel-body {
+    padding: 15px;
+}
+
+.reserve-panel .attraction-panel-heading-opt {
+    background: none;
+    padding: 10px 25px;
+}
+
+.attraction-panel-heading-opt > a {
+    color: #737373;
+}
+
+.attraction-panel-heading-opt > a:hover, .attraction-panel-heading-opt > a:focus {
+    color: #737373;
+    text-decoration: none;
+}
+
+/*================ End Sudarshan Biswas ===========*/
+
+/* Nav Tabs Styling*/
+.nav-tabs>li {
+    float: left;
+    margin-bottom: 0px
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin: 0 3px;
+    background-color: #FFFFFF;
+    color: #74777b;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 12px;
+}
+.nav-tabs>li>a:hover {
+    background-color: #152d45;
+    color: #FFFFFF;
+
+}
+.nav-tabs .active {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    line-height: 1.42857143;
+    margin: 0 3px;
+    background-color: #152d45;
+    color: #FFFFFF;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* ==========================================================================
+Widget
+========================================================================== */
+.widgetWrapper {
+    margin-top: 10px;
+}
+.widgetWrapper:first-child {
+    margin-top: 0;
+}
+.widgetTitle h4 {
+    padding: 14px 15px;
+    margin-bottom: 0;
+    list-style: none;
+    background: none repeat scroll 0 0 #152d45;
+    border-radius: 0;
+    margin-top: 5px;
+    border: none;
+    color: #FFF;
+}
+.widgetContent {
+    padding: 5px;
+    border: 1px solid #CAD6B2;margin-top:5px;
+    margin-top: 0;
+}
+.widgetContent ul {
+    margin: 0;
+    padding: 0;
+}
+li.widgetItemWrapper{
+    list-style: none;
+    padding-bottom: 10px;
+}
+li.widgetItemWrapper:last-child {
+    padding-bottom: 0;
+}
+a.widgetItemTitle {
+    color: #152d45;
+    border-bottom: 1px dashed #1b3a59;
+    display: -webkit-box;
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.widgetItemTitle h4 {
+    line-height: 26px;
+}
+.widgetItemTitle h4 a {
+    color: #152d45;
+    border-bottom: 1px dashed #1b3a59;
+}
+.widgetItemTitle h4 a:hover {
+    color: #1b3a59;
+}
+
+/* ==========================================================================
+Segment Title
+========================================================================== */
+.segmenttitle {
+    height: 43px;
+    margin: 10px 0;
+    padding: 0px 10px;
+    border: 4px solid transparent;
+    background: rgb(225, 225, 225);
+    margin-left: 0px;
+    outline: none;
+}
+
+.segmenttitle h4 {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin: 0 -10px;
+    background: none;
+    color: #152d45;
+    transition: background-color 0.2s, color 0.2s;
+    font-size: 24px;
+    padding: 0 17px;
+}
+.segmenttitle h4 a:hover {
+    text-decoration: blink;
+    background: none;
+    color: #1b3a59;
+}
+.segmenttitle h4:hover {
+    background: none;
+    color: #152d45;
+}
+div#gallery a img {
+    width: 143px;
+    margin: 5px;
+}
+
+/* ==========================================================================
+Recently added tab
+========================================================================== */
+
+
+.demof {
+    border: 1px solid #ccc;
+}
+.demof ul {
+    padding: 0;
+    list-style: none;
+}
+.demof li {
+    padding: 5px;
+}
+.demof li.odd {
+
+}
+.demof li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.demof img {
+    float: right;
+    width: 100px;
+    margin: 1px 0px 1px 2px;
+    height: 79px;
+}
+.demof a {
+    color: #307E42;
+    display: block;
+}
+.demof p {
+    margin: 15px 0 0;
+    font-size: 14px;
+}
+.demo5 {
+    border: 1px solid #ccc;
+    margin-top: 0;
+}
+.demo5 ul {
+    padding: 0;
+    width: 100%;
+}
+.demo5 ul li {
+    border-bottom: 1px solid #ccc;
+    list-type: none;
+    margin: 0;
+}
+
+.recently-pagination {
+    padding: 0;
+    margin-top: -29px;
+    margin-bottom: -29px;
+    width: 30px;
+    float: right;
+}
+
+.recently-pagination a.up {
+    height: 30px;
+    padding: 5px;
+    border-radius: 0;
+    width: 30px;
+    float: right;
+}
+.recently-pagination a.down {
+    height: 30px;
+    padding: 5px;
+    border-radius: 0;
+    width: 30px;
+    float: right;
+}
+
+/*======== ORB Pagination ========*/
+.orb-pagination .pager li > a, .orb-pagination .pager li > span {
+    border-radius: 0;
+}
+
+.orb-pagination .pager .previous > a, .orb-pagination .pager .previous > span, .orb-pagination .pager .next>a, .orb-pagination .pager .next>span {
+    float: none;
+}
+
+.orb-pagination .pager li:not(:first-child) > a {
+    border-left: none;
+}
+/*======== ORB Pagination ========*/
+
+
+.daterecent {} .recently-desc {
+   background: rgba(0, 0, 0, 0) linear-gradient(45deg, #85b91e, #658919) repeat scroll 0 0;
+   text-align: center;
+   text-shadow: 0 0 rgba(0, 0, 0, .6);
+   width: 100%;
+   height: 58px;
+}
+.recently-desc h2 {
+    font-weight: 200;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.48);
+    font-size: 18px;
+    line-height: 10px;
+    color: #F2FF00;
+    padding: 10px 0 8px 8px;
+    margin: 0;
+    text-align: left;
+    margin-right: 30px;
+}
+.recently-wrapper ul {
+    background-color: #FFF;
+    margin: 0;
+    overflow: auto;
+}
+span.counting {
+    margin: 32px 5px;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    color: #fff;
+}
+
+/* ==========================================================================
+Do you know
+========================================================================== */
+
+div.rox_scroll {
+    overflow: hidden;
+    position: relative;
+}
+.mask-wrapper {
+    padding: 10px;
+}
+.rox-head {
+    margin-bottom: 25px;
+}
+.view-eighth .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 120px;
+    filter: alpha(opacity=0);
+    opacity: 1;
+    -webkit-transition: all 1.3s;
+}
+div.small_mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 220px;
+    filter: alpha(opacity=0);
+    opacity: 1;
+    -webkit-transition: all 1.3s;
+}
+.view-eighth:hover div.small_mask {
+    top: 150px;
+}
+.view-eighth .color2 {
+    background: rgba(27, 33, 136, 0.49);
+}
+.view-eighth:hover .mask {
+    opacity: 1;
+    top: 0;
+}
+.view-feature .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 140px;
+    filter: alpha(opacity=0);
+    opacity: 1;
+    -webkit-transition: all 1.3s;
+}
+div.smallfeature_mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 150px;
+    filter: alpha(opacity=0);
+    opacity: 1;
+    -webkit-transition: all 1.3s;
+}
+.view-feature:hover div.small_mask {
+    top: 150px;
+}
+.view-eighth .color1 {
+    background: rgba(16, 130, 42, 0.69);
+}
+.view-feature .color2 {
+    background: rgba(0, 0, 0, 0.49);
+}
+.view-eighth .color3 {
+    background: rgba(64, 138, 250, 0.8);
+}
+.view-eighth .color4 {
+    background: rgba(233, 154, 30, 0.8);
+}
+.view-feature:hover .mask {
+    opacity: 1;
+    top: 0;
+}
+div.rox_scroll img {
+    -webkit-transition: all 1.3s;
+}
+div.rox_scroll:hover img {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+div.rox_scroll a {
+    color: #fff;
+}
+.mask-wrapper h2 {
+    font-weight: 200;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.48);
+    font-size: 16px;
+    line-height: 10px;
+    margin: 0 0 4px;
+    color: #F2FF00;
+}
+.mask-wrapper span {
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+.mask-wrapper p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+
+/* ==========================================================================
+Google Map Styling
+========================================================================== */
+#map {
+    width: 100%;
+    min-height: 480px;
+}
+
+
+/* ==========================================================================
+Card Styling
+========================================================================== */
+.card {
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 1px;
+    position: relative;
+}
+.card, .card-title {
+    margin-bottom: 0.75rem;
+}
+.card-img-top {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.cardcontent {
+    padding: 5px;
+}
+.intro {
+    /*border-bottom: 1px solid #f3f3f3;*/
+    /*font-size: 10px;*/
+    height: 38px;
+}
+.intro a {
+    /*border-bottom: 1px solid #1b3a59;*/
+    color: #152d45;
+}
+.card-block {
+    padding: 1.25rem;
+    /*max-height: 275px;*/
+    /*min-height: 275px;*/
+}
+.card-title {
+    margin-top: 0;
+}
+.card, .card-title {
+    margin-bottom: 0.75rem;
+}
+
+/*#similar-places > .col-xs-6 > a {*/
+    /*padding: 10px;*/
+/*}*/
+/* ==========================================================================
+Event Trip Page Styling
+========================================================================== */
+.eventDetails {
+    margin-bottom: 20px;
+}
+.eventHeading {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: -1px;
+    margin-top: 0;
+    padding: 10px 15px;
+}
+.eventDetails_wrapper.clearfix {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: -1px;
+}
+.eventDetails_title {
+    float: left;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 5px 15px;
+    width: 115px;
+}
+span.colon {
+    float: right;
+    text-align: right;
+}
+
+.list-group {
+    margin-top: 5px;
+}
+.list-group-item.active {
+    text-align: center;
+}
+.list-group-item span {
+    font-weight: bold;
+}
+
+/* Image Overlay for single-off_package page */
+.image-overlay {
+    position: relative;
+    margin-top: 10px;
+    /*text-align: center;*/
+}
+.featured-image.image-overlay img {
+    width: 100%;
+}
+.overlay-div{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    opacity: 0.7;
+    background-color: #000000;
+    padding: 10px;
+    z-index: 6;
+    min-width: 100%;
+}
+
+
+
+/* table */
+.MsoNormalTable {
+    margin: 30px auto !important;
+    text-align: center !important;
+}
+
+/* Demo CSS */
+.attachment-260x160.wp-post-image {
+    width: 100%;
+    height: 160px;
+}
+
+
+/* Form Building CSS */
+.registration-form {
+    padding: 0 10px;
+    /*background-color: #f3f3f3;*/
+}
+.registration-form label {
+    font-weight: 400;
+}
+.margined-submit-button {
+    margin-top: 42px;
+    background-color: #152D45;
+}
+.margined-submit-button-contact {
+    margin-top: 105px;
+    background-color: #152D45;
+}
+
+
+/* Input File Styling */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    background-color: #152D45;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+
+
+
+/* ==========================================================================
+Media Query
+========================================================================== */
+
+/**************************************************************** Large desktops and laptops (min-width: 1200px) ****************************************************************/
+@media (min-width: 1200px) {
+    .affix {
+        width: 262.5px;
+    }
+    .intro {
+        font-size: 14px;
+    }
+    .nav > li > a > .fa {
+        font-size: 20px;
+    }
+    .navbar-nav {
+        margin-left: 110px;
+    }
+}
+
+
+/*************************************************** Landscape tablets and medium desktops (min-width: 992px) and (max-width: 1199px) *************************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .affix {
+        width: 212.5px;
+    }
+    .navbar-nav {
+        margin-left: 25px;
+        font-size: 12px;
+    }
+    h1.place-title {
+        font-size: 30px;
+    }
+    #search-form {
+        width: 91% !important;
+    }
+}
+
+/*************************************************** Portrait tablets and small desktops (min-width: 768px) and (max-width: 991px) *************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .affix {
+        position: static;
+        width: auto;
+    }
+    h1.place-title {
+        font-size: 30px;
+    }
+    .nav > li > a {
+        font-size: 12px;
+    }
+    .navbar-right > li > a {
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .nav > li > a > .fa {
+        font-size: 16px;
+    }
+    .breadcrumb {
+        margin-top: 10px;
+    }
+}
+
+/************************************************************************* Landscape phones and portrait tablets (max-width: 767px) ********************************************************/
+@media (max-width: 767px) {
+    .intro {
+        font-size: 10px;
+    }
+    .navbar-collapse.in {
+        overflow-y: hidden;
+    }
+    #myNavbar {
+        background-color: #f5f5f5;
+        margin-top: 9px;
+        border: 1px solid #cdcdcd;
+        padding-bottom: 10px;
+    }
+    .navbar-right {
+        text-align: center;
+    }
+    .navbar-right > li {
+        display: inline;
+    }
+    .intro h4 a {
+        font-size: 16px;
+    }
+
+    /*Added by TR */
+    .affix {
+        margin-bottom: 10px;
+        position: static;
+        width: 100%;
+    }
+
+    .nav > li > a:hover {
+        color: #1A356E;
+    }
+    .navbar-right > li > a {
+        font-size: 2rem;
+        display: inline;
+    }
+
+
+}
+
+/*************************************************************************** Portrait phones and smaller (max-width: 480px) ***************************************************************/
+@media (max-width: 480px) {
+
+    h1.place-title {
+        font-size: 30px;
+    }
+    /*navbar styling*/
+    .navbar-collapse.in {
+        overflow-y: hidden;
+    }
+    #myNavbar {
+        background-color: #f5f5f5;
+        margin-top: 9px;
+        border: 1px solid #cdcdcd;
+        padding-bottom: 10px;
+    }
+    .navbar-right {
+        text-align: center;
+    }
+    .navbar-right > li {
+        display: inline;
+    }
+    /*Added by TR */
+    .affix {
+        margin-bottom: 10px;
+        position: static;
+        width: 100%;
+    }
+
+    .nav > li > a {
+        /*display: block;*/
+    }
+    .nav > li > a:hover {
+        color: #1A356E;
+    }
+    .nav > li > a > .fa {
+        font-size: 20px;
+    }
+    .overlay-div > h1 {
+        font-size: 20px;
+    }
+
+    /*do you know*/
+    .do-you-know-image img {
+        width: auto;
+        height: auto;
+    }
+
+    /*card styling*/
+    .intro {
+        font-size: 10px;
+    }
+    .intro h4 a {
+        font-size: 12px;
+    }
+    .card a .attachment-260x160.wp-post-image {
+        height: 110px;
+    }
+
+
+}
+
+/*************************places-page image max height width*************************************/
+.places-slide-box{
+    max-width: 650px;
+    max-height: 450px;
+}

@@ -1,0 +1,70 @@
+
+/****************************************************************** Footer ******************************************************************/
+.footer-menu {
+    text-align: center;
+}
+.footer-menu a {
+    font-size: 10px;
+}
+footer {
+
+    border-top:2px solid #eee;
+    background: #f6f8fa;
+    height: 50px;
+    background: none repeat scroll 0 0 #637c92;
+    margin: 0;
+    border-top: 2px solid #eee;
+    color: #656565;
+    padding: 30px 0;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+footer .text-right {
+    padding: 0;
+    margin: 0;
+}
+footer a {
+    padding: 5px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#topcontrol {
+    border: 1px solid #c2c2c2;
+    bottom: 15px;
+    color: #000;
+    display: none;
+    padding: 0.5em 1em;
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    background-color: #f0f0f0;
+}
+#topcontrol:active, #topcontrol:focus {
+    outline: none;
+}
+
+
+
+/************************************************************************* Landscape phones and portrait tablets (max-width: 767px) ********************************************************/
+@media (max-width: 767px) {
+    .copyright-text {
+        /*text-align: center;*/
+        font-size: 12px;
+    }
+    .footer-menu a {
+        font-size: 14px;
+    }
+}
+
+/*************************************************************************** Portrait phones and smaller (max-width: 480px) ***************************************************************/
+@media (max-width: 480px) {
+    .copyright-text {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer-menu a {
+        font-size: 10px;
+    }
+}

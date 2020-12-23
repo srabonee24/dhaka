@@ -1,0 +1,22 @@
+/* General Styling*/
+body {
+    font-family: "Raleway",sans-serif;
+    line-height: 26px;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #152d45;
+}
+a:hover {
+    text-decoration: none;
+   /* color: #1b3a59; */
+}
+
+/* Navbar Styling */
+#home-menu .navbar .container {
+    padding-left: 25px;
+}
+.navbar.navbar-fixed-top {
+    border-bottom: 1px solid #d3d3d3;
+}
